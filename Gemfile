@@ -11,4 +11,5 @@ gem "rubocop", "~> 1.7"
 
 gem "net-ssh"
 gem "net-ping"
+gem "net-scp"
 gem "irb"

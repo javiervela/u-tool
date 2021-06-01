@@ -1,0 +1,27 @@
+Host uno
+	#Hostname 192.168.1.201
+    Hostname 10.1.47.201
+	User vagrant
+	PubkeyAuthentication yes
+	Port 22
+	
+Host dos
+	#Hostname 192.168.1.202
+    Hostname 10.1.47.202
+	User vagrant
+	PubkeyAuthentication yes
+	Port 22
+
+Host tre
+	#Hostname 192.168.1.203
+    Hostname 10.1.47.203
+	User vagrant
+	PubkeyAuthentication yes
+	Port 22
+
+Host cua
+	#Hostname 192.168.1.204
+    Hostname 10.1.47.204
+	User vagrant
+	PubkeyAuthentication yes
+	Port 22
