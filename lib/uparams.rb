@@ -10,7 +10,8 @@ ENDUSAGE
 
   HELP = <<ENDHELP
 CONFIGURATION FILES:
-    ./.u/hosts: List of hosts. To work correctly, host must be defined in ~/.ssh/config with Host: IP (same in .u/hosts).
+    ./.u/hosts: List of hosts. To work correctly, host must be defined in ssh/config or complete IP
+    ./.u/ssh/config: SSH configuration file for U tool
     ./.u/manifiestos: List of Puppet manifests to use "config" command
 COMMANDS:
     p, ping                   Ping hosts (timeout 0.1 ms)
@@ -23,7 +24,7 @@ ENDHELP
 
 =begin 
   Parse ARGV for commands and arguments
-=end  
+=end
   def self.parse(file)
     @next_arg = @UNFLAGGED_ARGS.first
     ARGV.each do |arg|
@@ -65,6 +66,7 @@ ENDHELP
 
 =begin 
   Check arguments and display Help or Usage
+  Needs file so it can check de host or group argument
 =end
   def self.check_args(file)
     # Check empty

@@ -29,7 +29,6 @@ class UConfig
     end
   end
 
-
 =begin 
   Send Puppet manifest to host via SCP
 =end
@@ -54,7 +53,7 @@ class UConfig
       ussh.exec_ssh(host)
     end
   end
-  
+
 =begin 
   Remove Puppet manifest from host via SSH
 =end

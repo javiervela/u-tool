@@ -23,7 +23,11 @@ class UPing
     elsif repeat
       # If it fails, lookup in ssh/config file and repeat ping
       host = USSH.new().find_ip(host)
-      exec_ping(host, :repeat => false)
+      if host
+        exec_ping(host, :repeat => false)
+      else
+        puts "#{$COLOR_RED}FALLA#{$COLOR_NONE}"
+      end
     else
       puts "#{$COLOR_RED}FALLA#{$COLOR_NONE}"
     end
