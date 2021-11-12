@@ -1,5 +1,8 @@
 # U
 
+<img alt="GitHub" src="https://img.shields.io/github/license/javiervela/u-tool">z
+
+
 Ruby tool for remote execution, remote deployment and automatic configuration.
 
 ## Installation

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    u (0.1.0)
+    u (1.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -50,4 +50,4 @@ DEPENDENCIES
   u!
 
 BUNDLED WITH
-   2.2.19
+   2.2.26
